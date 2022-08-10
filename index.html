@@ -75,7 +75,7 @@
     <nav class="navbar navbar-expand-lg navbar navbar-dark navbarClent sticky-top">
         <!--seccion logo navbar -->
         <div class="container-fluid ">
-                <a class="navbar-brand content-logo d-md-none" href="~/Data/Index" style="list-style:none;">
+                <a class="navbar-brand content-logo d-md-none" href="/index.html" style="list-style:none;">
                     <img class="img-fluid" src="/Assets/imagenes index/blanco-trans.png" alt="Logo DI" />
                 </a>
            
@@ -86,14 +86,14 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mb-2 mb-lg-0 ">
                     <li class="nav-item float-md-right">
-                        <a id="public_Index" class="nav-link active24" aria-current="page" href="~/Data/Index" style="color:#fff;">INICIO</a>
+                        <a id="public_Index" class="nav-link active24" aria-current="page" href="/index.html" style="color:#fff;">INICIO</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a id="public_Estadisticas" class="nav-link" @*href="~/Data/Estadisticas"*@ href="/Data/paginaBusqueda?id=Chile" style="color:#fff;">ESTADÍSTICAS</a>
                     </li> -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a id="public_Colecciones" class="nav-link" href="~/Data/ColeccionesSalud" style="color:#fff;">COLECCIONES</a>
-                    </li>
+                    </li> -->
                     <!--SEMANARIOS-->
                     <li class="nav-item">
                         <a id="public_semanario" class="nav-link" href="/semanrios.html" style="color:#fff;">SEMANARIOS</a>
@@ -111,7 +111,7 @@
                     </li> -->
                     <!--ESTE BOTON Landing de programacion de webinars-->
                     <li class="nav-item">
-                        <a id="Marketing_index" class="nav-link" href="~/Marketing/Index" tabindex="-1" aria-disabled="true" style="color:#fff;">WEBINARS</a>
+                        <a id="Marketing_index" class="nav-link" href="/webinar.html" tabindex="-1" aria-disabled="true" style="color:#fff;">WEBINARS</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a id="public_dataAcceso" class="nav-link" href="~/Data_Usuario/Suscripciones" target="_blank" tabindex="-1" aria-disabled="true" style="color:#fff;">ACCESO</a>
@@ -230,55 +230,47 @@
                 <h3 class="home-title">
                     <span style="color:white">¡Miles de estadísticas!</span>
                 </h3>
-                <p style="padding-left:5%; padding-right:5%; color: #fff;">
+                <p style="padding-left:5%; padding-right:5%; color: #fff;" class="mb-5">
                     Generamos día a día información histórica, actual y proyectada disponible de forma gratuita y con suscripción.
                 </p>
             </div>
         </div>
     </div>
 
-    <!--seccion slider o carrusel-->
-    <div class="container slide-big" style="margin-bottom: 25px; margin-top: 25px;">
-        @{ Html.RenderAction("CarruselVetical", "Info");}
-    </div>
-
-    <div class="col-s-12 col-s-12 col-md-8 d-s-block d-md-none mt-3">
-
-        @{ Html.RenderAction("CarruselVetical2", "Info");}
-    </div>
+    
 
 <!-- BUSCADOR INTELIGENTE-->
-    <div class="container-fluid content1 mt-5">
+    <div class="container-fluid content1">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 mt-5 ">
                 <h3 id="header2">
-                    <b>¿Quieres ver otras estadísticas?</b>
+                    <b>Nuestra Propuesta</b>
                 </h3>
                 <p id="text2">
-                    ¡Nuestro Buscador Inteligente contiene miles de gráficos y
-                    mapas interactivos listos para utilizar de forma gratuita!"
+                    Nuestro norte es desarrollar productos digitales bajo la modalidad Datos como Servicio (Data As A Service) que
+                    respondan las preguntas que se puedan presentar en tu día a día.
                 </p>
             </div>
 
-            <div class="col-12 col-md-8 text-center" style="margin-bottom: 4%; border-radius: 20px; background-color: rgb(210 220 235 / 0.60) ">
+            <!-- <div class="col-12 col-md-8 text-center" style="margin-bottom: 4%; border-radius: 20px; background-color: rgb(210 220 235 / 0.60) "> -->
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <div class="row mt-3 justify-content-center">
-                            <div class="col-12 col-md-6 text-center mb-md-3">
+                            <!-- <div class="col-12 col-md-6 text-center mb-md-3">
                                 <h5 style="font-weight:800;"><img class="img-fluid" width="25" src="/Assets/imagenes index/Icono_dataIntelligence_Rojo.png" /><b>BUSCADOR INTELIGENTE</b></h5>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
                     <!--Buscador-->
-                    <div class="col-12 col-md-12 text-center " style="margin-bottom:40px;">
+                    <!-- <div class="col-12 col-md-12 text-center " style="margin-bottom:40px;">
                         <form class="example d-flex" action="~/Data/PaginaBusqueda" method="get" style="border:none !important;">
                             <input type="text" placeholder="Escribe tu tema de interés" name="id" style="border:none !important;">
                             <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
                         </form>
-                    </div>
+                    </div> -->
 
-                    <div class="col-12 col-md-11 mb-3 text-left">
+                    <div class="col-12 col-md-11 mb-5 text-left">
                     </div>
                 </div>
             </div>
@@ -288,13 +280,13 @@
     <div class="container-fluid content2">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
-                <h3 style="font-weight:bold;">
+                <!-- <h3 style="font-weight:bold;">
                     Nuestra Propuesta
                 </h3>
                 <p id="text4">
                     Nuestro norte es desarrollar productos digitales bajo la modalidad Datos como Servicio (Data As A Service) que
                     respondan las preguntas que se puedan presentar en tu día a día.
-                </p>
+                </p> -->
             </div>
         </div>
         <div class="row  justify-content-center mt-4">
@@ -327,7 +319,7 @@
                         <p id="text4">
                             Creamos una selección de colecciones para que las conozcas. ¡Regístrate y accede a una prueba gratis de 7 días!
                         </p>
-                        <a href="~/Account/Register"><img class="img-fluid w-50" src="/Assets/imagenes index/boton_pruebagratis.jpg" /></a>
+                        <!-- <a href="~/Account/Register"><img class="img-fluid w-50" src="/Assets/imagenes index/boton_pruebagratis.jpg" /></a> -->
                     </div>
                 </div>
             </div>
@@ -339,7 +331,7 @@
         <div class="row justify-content-center mt-5">
 
             <div class="col-12 col-md-12 text-center" style="padding:0;">
-                <a href="~/SEMANARIO/Home"><img class="img-fluid" src="/Assets/imagenes index/INICIO_SEMANARIO_escritorio.jpg"/></a>
+                <a href="/semanrios.html"><img class="img-fluid" src="/Assets/imagenes index/INICIO_SEMANARIO_escritorio.jpg"/></a>
             </div>
         </div>
     </section>
@@ -347,8 +339,8 @@
      <!-- SECCION BOX INFO-->
      <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-12" style="padding:0;">
-                <a href="~/INFOBOX/Home"><img class="img-fluid" src="/Assets/imagenes index/INICIO_INFOBOX_escritorio.jpg" /></a>
+            <div class="col-12 col-md-12 text-center" style="padding:0;">
+                <a href="/infobox.html"><img class="img-fluid" src="/Assets/imagenes index/INICIO_INFOBOX_escritorio.jpg" /></a>
             </div>
         </div>
     </div>
@@ -356,8 +348,8 @@
      <!--SECCION panoramas-->
      <div class="container-fluid ">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-12" style="padding:0;">
-                <a href="~/PANORAMAS/Home"><img class="img-fluid" src="/Assets/imagenes index/pagina_PANORAMAS_escritorio.jpg" /></a>
+            <div class="col-12 col-md-12 text-center" style="padding:0;">
+                <a href="/panoramas.html"><img class="img-fluid" src="/Assets/imagenes index/pagina_PANORAMAS_escritorio.jpg" /></a>
             </div>
         </div>
     </div>
@@ -377,7 +369,7 @@
                                 </style>
                             <div class="carousel-item active">
                                 <div class="col-md-3 text-center">
-                                    <a href="~/Data/ColeccionesAgencia" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/icono_agenciaDI.png" class="img-fluid">
@@ -390,7 +382,7 @@
 
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesSalud" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
                                         <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D360_ENFERMEDADES_MUNDIALES.png" class="img-fluid">
@@ -404,8 +396,8 @@
 
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesEconomia" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D140_ECONOMIA.png" class="img-fluid">
                                             </div>
@@ -416,8 +408,8 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesIngresoH" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card ">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D400_INGRESO_HISTORICO.png" class="img-fluid">
                                             </div>
@@ -429,8 +421,8 @@
 
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesAgricultura" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card ">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D100_AGRICULTURA.png" class="img-fluid">
                                             </div>
@@ -441,8 +433,8 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesGlaciares_R10" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D261_GLACIARES_10.png" class="img-fluid">
                                             </div>
@@ -453,8 +445,8 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesViolenciaMujer" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D300_VIOLENCIA_CONTRA_LA_MUJER.png" class="img-fluid">
                                             </div>
@@ -466,8 +458,8 @@
 
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesIncendios" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
 
                                                 <img src="/Assets/imagenes index/D101_INCENDIOS.png" class="img-fluid">
@@ -479,8 +471,8 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesEducacionComunal" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D161_EDUCACIONCOMUNAL.png" class="img-fluid">
                                             </div>
@@ -492,8 +484,8 @@
 
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesMunicipio" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D161_EDUCACIONCOMUNAL.png" class="img-fluid">
                                             </div>
@@ -504,8 +496,8 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesCiudades" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D241_CIUDADES.png" class="img-fluid">
                                             </div>
@@ -517,8 +509,8 @@
 
                             <div class="carousel-item">
                                 <div class="col-md-3">
-                                    <a href="~/Data/ColeccionesAgencia" data-toggle="tooltip" data-placement="right" title="Click para mas información">
-                                        <div class="card w-75">
+                                    <a href="/mantenimiento.html" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
                                             <div class="card-img">
                                                 <img src="/Assets/imagenes index/D990_AGENCIA_INFORMACION.png" class="img-fluid">
                                             </div>
@@ -628,10 +620,10 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="~/Data/Empleo" class="text-white" style="text-decoration:none;">Empleo</a>
+                                <a href="/mantenimiento.html" class="text-white" style="text-decoration:none;">Empleo</a>
                             </li>
                             <li>
-                                <a href="~/Data/Inversion" class="text-white" style="text-decoration:none;">Inversión</a>
+                                <a href="/mantenimiento.html" class="text-white" style="text-decoration:none;">Inversión</a>
                             </li>
                         </ul>
                     </div>
@@ -642,16 +634,16 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="~/Data/FAQ" class="text-white" style="text-decoration:none;">Preguntas Frecuentes</a>
+                                <a href="/mantenimiento.html" class="text-white" style="text-decoration:none;">Preguntas Frecuentes</a>
                             </li>
                             <li>
-                                <a href="~/Data/TerminosyCondiciones" class="text-white" style="text-decoration:none;">Términos y condiciones</a>
+                                <a href="/mantenimiento.html" class="text-white" style="text-decoration:none;">Términos y condiciones</a>
                             </li>
                             <li>
-                                <a href="~/Data/Soporte" class="text-white" style="text-decoration:none;">Soporte</a>
+                                <a href="/mantenimiento.html" class="text-white" style="text-decoration:none;">Soporte</a>
                             </li>
                             <li>
-                                <a href="~/Data/VentasCorporativas" class="text-white" style="text-decoration:none;">Ventas Coorporativas</a>
+                                <a href="/mantenimiento.html" class="text-white" style="text-decoration:none;">Ventas Coorporativas</a>
                             </li>
                         </ul>
                     </div>
@@ -689,20 +681,7 @@
                             </a>
                         </section>
 
-                        <!-- @*<ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#!" class="text-white">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" class="text-white">Link 4</a>
-                                </li>
-                            </ul>*@ -->
+                       
                     </div>
                     <!--Grid column-->
                 </div>
