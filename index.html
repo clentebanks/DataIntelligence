@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="DATA INTELLIGENCE">
+    <meta property="og:image" content="https://files.monday.com/use1/email_headers/4279957/thumb/sud_austral_email_header_261050.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="DATA INTELLIGENCE">
+    <meta name="twitter:image" content="https://css.zohocdn.com/analytics/v3_zr/themes/common/images/link-preview.a7a6e5da0ad9a0e542db59a4810eac54.jpg">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DATA INTELLIGENCE - HOME</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="~/Images/favicons/data_intelligence.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="/Home.css" rel="stylesheet" />
+    <!-- Hotjar Tracking Code for https://www.dataintelligence-group.com/data/index -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2580997, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+    @*El contenido de description aparecerá como descripción en los resultados de las búsquedas*@
+    <meta name="description" content="Transformamos datos en información: Generamos cruces infinitos que resultan esenciales para la
+          toma de decisiones desde un conocimiento holístico, preciso y conectado con la realidad que se está observando. " />
+    @*La meta etiqueta keywords hace referencia a las palabras clave. No deberíamos establecer en ella más de 10 ó 12 palabras, separadas por comas *@ -->
+    <meta name="keywords" content="Data Intelligence, Data, Colección" />
+
+    <script>
+        function ActivarMenuSuperior4(opcionMenu) {
+            $('.active24').removeClass('active24');
+            $(opcionMenu).addClass("active24");
+        }
+    </script>
+    <style>
+        /*code to change background color*/
+        /* .navbar-nav > li > .active2 {
+            background-color: #C0C0C0 !important;
+            color: green !important;
+        }*/
+        .navbar-nav > li > .active24 {
+            border-top: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+            padding: 15px 0;
+            background-color: #B8348A;
+        }
+    </style>
+    <link href="/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163367570-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163367570-6');
+    </script>
+</head>
+<body>
+    
+    <!--seccion navbar menu principal-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark navbarClent sticky-top">
+        <!--seccion logo navbar -->
+        <div class="container-fluid ">
+                <a class="navbar-brand content-logo d-md-none" href="~/Data/Index" style="list-style:none;">
+                    <img class="img-fluid" src="/Assets/imagenes index/blanco-trans.png" alt="Logo DI" />
+                </a>
+           
+
+            <button style="width:20% !important;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="nav-item float-md-right">
+                        <a id="public_Index" class="nav-link active24" aria-current="page" href="~/Data/Index" style="color:#fff;">INICIO</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a id="public_Estadisticas" class="nav-link" @*href="~/Data/Estadisticas"*@ href="/Data/paginaBusqueda?id=Chile" style="color:#fff;">ESTADÍSTICAS</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a id="public_Colecciones" class="nav-link" href="~/Data/ColeccionesSalud" style="color:#fff;">COLECCIONES</a>
+                    </li>
+                    <!--SEMANARIOS-->
+                    <li class="nav-item">
+                        <a id="public_semanario" class="nav-link" href="/semanrios.html" style="color:#fff;">SEMANARIOS</a>
+                    </li>
+                    <!--INFO-BOX-->
+                    <li class="nav-item">
+                        <a id="public_infobox" class="nav-link" href="/infobox.html" style="color:#fff;">INFOBOX</a>
+                    </li>
+                    <!--PANORAMAS-->
+                    <li class="nav-item">
+                        <a id="public_panoramas" class="nav-link" href="/panoramas.html" style="color:#fff;">PANORAMAS</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a id="public_dataLab" class="nav-link" href="https://dataintelligence.store/blogs/noticias" target="_blank" style="color:#fff;">DATALAB</a>
+                    </li> -->
+                    <!--ESTE BOTON Landing de programacion de webinars-->
+                    <li class="nav-item">
+                        <a id="Marketing_index" class="nav-link" href="~/Marketing/Index" tabindex="-1" aria-disabled="true" style="color:#fff;">WEBINARS</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a id="public_dataAcceso" class="nav-link" href="~/Data_Usuario/Suscripciones" target="_blank" tabindex="-1" aria-disabled="true" style="color:#fff;">ACCESO</a>
+                    </li> -->
+                    <!--ESTE BOTON ES PARA LA PRUEBA DEL IFRAME DE MEDIOS INSERTADO EN OTRA VISTA-->
+                    <!-- @*<li class="nav-item">
+                                <a class="nav-link" href="~/Data/Medios" target="_blank" tabindex="-1" aria-disabled="true" style="color:#fff;">MEDIOS</a>
+                        </li>*@ -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- @RenderBody() -->
+    <!--Image de next mile-->
+    <section class="continer-fluid">
+        <div class="row">
+            <div class="col-12 col-md-12 text-center">
+                <a href="https://nextmile.netlify.app/"> <img class="img-fluid vw-100" src="/Assets/imagenes index/NextMail_inicio.jpg" alt="Imagen nextmile home" /></a>
+            </div>
+        </div>
+    </section>
+     <!--sección content-cabecera-->
+     <div class="container-fluid content-header">
+        <div class="row justify-content-center" style="background-color: black">
+            <div class="col-12 col-md-8">
+                <style>
+                    /* Basic styles */
+                    *,
+                    *::before,
+                    *::after {
+                        box-sizing: border-box;
+                    }
+
+                    :root {
+                        --bg-color: #D8D8D8;
+                    }
+
+                    h3 {
+                        font-size: 2em;
+                        font-weight: normal;
+                    }
+                    /* title styles */
+                    .home-title span {
+                        position: relative;
+                        overflow: hidden;
+                        display: block;
+                        line-height: 1.2;
+                    }
+
+                        .home-title span::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: white;
+                            animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+                            transform: translateX(-101%);
+                        }
+
+                        .home-title span::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: var(--bg-color);
+                            animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+                            transform: translateX(0);
+                        }
+
+                        .home-title span:nth-of-type(1)::before,
+                        .home-title span:nth-of-type(1)::after {
+                            animation-delay: 1s;
+                        }
+
+                        .home-title span:nth-of-type(2)::before,
+                        .home-title span:nth-of-type(2)::after {
+                            animation-delay: 1.5s;
+                        }
+
+                    @keyframes a-ltr-after {
+                        0% {
+                            transform: translateX(-100%)
+                        }
+
+                        100% {
+                            transform: translateX(101%)
+                        }
+                    }
+
+                    @keyframes a-ltr-before {
+                        0% {
+                            transform: translateX(0)
+                        }
+
+                        100% {
+                            transform: translateX(200%)
+                        }
+                    }
+
+                    .mediosTitle {
+                        background-image: url('../../Content/Imagene_inicio_Medios/box_fondoescritorio.jpg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .image2 {
+                        width: 80%;
+                    }
+                </style>
+                <h3 class="home-title">
+                    <span style="color:white">¡Miles de estadísticas!</span>
+                </h3>
+                <p style="padding-left:5%; padding-right:5%; color: #fff;">
+                    Generamos día a día información histórica, actual y proyectada disponible de forma gratuita y con suscripción.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--seccion slider o carrusel-->
+    <div class="container slide-big" style="margin-bottom: 25px; margin-top: 25px;">
+        @{ Html.RenderAction("CarruselVetical", "Info");}
+    </div>
+
+    <div class="col-s-12 col-s-12 col-md-8 d-s-block d-md-none mt-3">
+
+        @{ Html.RenderAction("CarruselVetical2", "Info");}
+    </div>
+
+<!-- BUSCADOR INTELIGENTE-->
+    <div class="container-fluid content1 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mt-5 ">
+                <h3 id="header2">
+                    <b>¿Quieres ver otras estadísticas?</b>
+                </h3>
+                <p id="text2">
+                    ¡Nuestro Buscador Inteligente contiene miles de gráficos y
+                    mapas interactivos listos para utilizar de forma gratuita!"
+                </p>
+            </div>
+
+            <div class="col-12 col-md-8 text-center" style="margin-bottom: 4%; border-radius: 20px; background-color: rgb(210 220 235 / 0.60) ">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="row mt-3 justify-content-center">
+                            <div class="col-12 col-md-6 text-center mb-md-3">
+                                <h5 style="font-weight:800;"><img class="img-fluid" width="25" src="/Assets/imagenes index/Icono_dataIntelligence_Rojo.png" /><b>BUSCADOR INTELIGENTE</b></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Buscador-->
+                    <div class="col-12 col-md-12 text-center " style="margin-bottom:40px;">
+                        <form class="example d-flex" action="~/Data/PaginaBusqueda" method="get" style="border:none !important;">
+                            <input type="text" placeholder="Escribe tu tema de interés" name="id" style="border:none !important;">
+                            <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="col-12 col-md-11 mb-3 text-left">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--seccion contenido-->
+    <div class="container-fluid content2">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h3 style="font-weight:bold;">
+                    Nuestra Propuesta
+                </h3>
+                <p id="text4">
+                    Nuestro norte es desarrollar productos digitales bajo la modalidad Datos como Servicio (Data As A Service) que
+                    respondan las preguntas que se puedan presentar en tu día a día.
+                </p>
+            </div>
+        </div>
+        <div class="row  justify-content-center mt-4">
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid p-3" src="/Assets/imagenes index/imagen_inicio.png" />
+                    </div>
+                    <div class="col-12 col-md-8 text-left mt-4">
+                        <h5 id="TituloCon" style="font-weight:bold; text-align:left;">
+                            ¡Miles y miles de datos!
+                        </h5>
+                        <p id="text4">
+                            Seleccionamos los temas de contingencia, buscamos cada uno de los datos
+                            públicos disponibles, sistematizamos la información y creamos millones
+                            de gráficos y mapas interactivos para quien necesite ampliar la visión de
+                            esas realidades.
+                        </p>
+                        <h5 id="TituloCon" class="mt-4" style="font-weight:bold; text-align:left;">
+                            Y agrupamos los miles de datos en Colecciones con información
+                        </h5>
+                        <p id="text4">
+                            Transformamos los temas de contingencia en gráficos y
+                            mapas interactivos agrupándolos en colecciones
+                            especializadas para una búsqueda más eficiente y útil.
+                        </p>
+                        <h5 class="mt-5" id="TituloCon" style="font-weight:bold; text-align:left;">
+                            ¡Gratis por una semana!
+                        </h5>
+                        <p id="text4">
+                            Creamos una selección de colecciones para que las conozcas. ¡Regístrate y accede a una prueba gratis de 7 días!
+                        </p>
+                        <a href="~/Account/Register"><img class="img-fluid w-50" src="/Assets/imagenes index/boton_pruebagratis.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION SEMANARIOS-->
+    <section class="container-fluid">
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-12 col-md-12 text-center" style="padding:0;">
+                <a href="~/SEMANARIO/Home"><img class="img-fluid" src="/Assets/imagenes index/INICIO_SEMANARIO_escritorio.jpg"/></a>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION BOX INFO-->
+     <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12" style="padding:0;">
+                <a href="~/INFOBOX/Home"><img class="img-fluid" src="/Assets/imagenes index/INICIO_INFOBOX_escritorio.jpg" /></a>
+            </div>
+        </div>
+    </div>
+
+     <!--SECCION panoramas-->
+     <div class="container-fluid ">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12" style="padding:0;">
+                <a href="~/PANORAMAS/Home"><img class="img-fluid" src="/Assets/imagenes index/pagina_PANORAMAS_escritorio.jpg" /></a>
+            </div>
+        </div>
+    </div>
+    <!--carrusel de iconos de suscripciones-->
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mb-md-5 mb-2 mt-3">
+            <div class="container text-center my-3">
+                <h3 class="font-weight-bold mb-md-3">Conoce las Colecciones Data intelligence</h3>
+                <div class="row justify-content-center">
+                    <div id="recipeCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                                <style>
+                                    .card {
+                                        width: 84%;
+                                        margin-left: 12%;
+                                    }
+                                </style>
+                            <div class="carousel-item active">
+                                <div class="col-md-3 text-center">
+                                    <a href="~/Data/ColeccionesAgencia" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/icono_agenciaDI.png" class="img-fluid">
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesSalud" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D360_ENFERMEDADES_MUNDIALES.png" class="img-fluid">
+                                            </div>
+
+                                        
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesEconomia" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D140_ECONOMIA.png" class="img-fluid">
+                                            </div>
+                                        
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesIngresoH" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D400_INGRESO_HISTORICO.png" class="img-fluid">
+                                            </div>
+                                           
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesAgricultura" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D100_AGRICULTURA.png" class="img-fluid">
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesGlaciares_R10" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D261_GLACIARES_10.png" class="img-fluid">
+                                            </div>
+                                           
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesViolenciaMujer" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D300_VIOLENCIA_CONTRA_LA_MUJER.png" class="img-fluid">
+                                            </div>
+                                          
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesIncendios" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+
+                                                <img src="/Assets/imagenes index/D101_INCENDIOS.png" class="img-fluid">
+                                            </div>
+                                         
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesEducacionComunal" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D161_EDUCACIONCOMUNAL.png" class="img-fluid">
+                                            </div>
+                                           
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesMunicipio" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D161_EDUCACIONCOMUNAL.png" class="img-fluid">
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesCiudades" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D241_CIUDADES.png" class="img-fluid">
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <a href="~/Data/ColeccionesAgencia" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                                        <div class="card w-75">
+                                            <div class="card-img">
+                                                <img src="/Assets/imagenes index/D990_AGENCIA_INFORMACION.png" class="img-fluid">
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+    </div>
+   <!-- SECCION DE VIDEO  -->
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+            <iframe width="860" height="515" src="https://www.youtube.com/embed/CXOFxGJFKVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+     <!--SECCION DE SLIDER DE PATROCINADORES-->
+     <link href="/estilos.css" rel="stylesheet" />
+    <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-8 mt-5 slide1 text-center">
+            <h4 style="padding-bottom:1%; font-weight:bold;">
+                Estos medios de comunicación han confiado en nuestra información
+            </h4>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <a href=" https://www.cnnchile.com/elecciones2021/candidatos-gore-concejales-alcaldes-constituyentes_20210511/" target="_blank"><img src="/Logos noticieros/cnn chile.png" height="100" width="250" alt="CNN CHILE "></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.elmostrador.cl/braga/2021/07/09/mapa-de-femicidios-en-chile-victima-mas-joven-era-una-nina-de-solo-11-anos/ " target="_blank">
+                            <img src="/Logos noticieros/mostrador.png" height="100" width="250" alt="Noticias El Mostrador">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.chvnoticias.cl/elecciones2021/candidatos-concejal-15-y-16-mayo_20210510/ " target="_blank">
+                            <img src="/Logos noticieros/noticias.png" height="100" width="250" alt="Chile Vision">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.radiopanama.com.pa/" target="_blank"> <img src="/Logos noticieros/panama.png" height="100" width="250" alt="Radio Panama"></a>
+                    </div>
+                    <div class="slide">
+
+                        <a href="https://www.asexma.cl/" target="_blank"><img src="/Logos noticieros/logo_asexma.jpg" height="100" width="250" alt="CNN CHILE "></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.elmostrador.cl/braga/2021/07/09/mapa-de-femicidios-en-chile-victima-mas-joven-era-una-nina-de-solo-11-anos/ " target="_blank">
+                            <img src="/Logos noticieros/mostrador.png" height="100" width="250" alt="Noticias El Mostrador">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.chvnoticias.cl/elecciones2021/candidatos-concejal-15-y-16-mayo_20210510/ ">
+                            <img src="/Logos noticieros/noticias.png" height="100" width="250" alt="Chile Vision">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.radiopanama.com.pa/"> <img src="/Logos noticieros/panama.png" height="100" width="250" alt="Radio Panama"></a>
+                    </div>
+                    <div class="slide">
+                        <a href=" https://www.cnnchile.com/elecciones2021/candidatos-gore-concejales-alcaldes-constituyentes_20210511/ "><img src="/Logos noticieros/cnn chile.png" height="100" width="250" alt="CNN CHILE "></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.elmostrador.cl/braga/2021/07/09/mapa-de-femicidios-en-chile-victima-mas-joven-era-una-nina-de-solo-11-anos/ ">
+                            <img src="/Logos noticieros/mostrador.png" height="100" width="250" alt="Noticias El Mostrador">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.chvnoticias.cl/elecciones2021/candidatos-concejal-15-y-16-mayo_20210510/ ">
+                            <img src="~/Content/empresas de noticias/noticias.png" height="100" width="250" alt="Chile Vision">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.radiopanama.com.pa/"> <img src="/Logos noticieros/panama.png" height="100" width="250" alt="Radio Panama"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--seccion Footer -->
+    <footer class="bg-dark text-center text-white" style="bottom: 0 !important; position: relative;">
+        <!-- Grid container -->
+        <div class="container-fluid p-4">
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row logo de empresa-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <img class="img-fluid" style="z-index:100;" src="/Assets/imagenes index/logo_dataintelligence_blanco.png" alt="Logo DI" />
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mt-md-2" style="font-size:1rem;">DATA INTELLIGENCE</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="~/Data/Empleo" class="text-white" style="text-decoration:none;">Empleo</a>
+                            </li>
+                            <li>
+                                <a href="~/Data/Inversion" class="text-white" style="text-decoration:none;">Inversión</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mt-md-2" style="font-size:1rem;">ASISTENCIA</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="~/Data/FAQ" class="text-white" style="text-decoration:none;">Preguntas Frecuentes</a>
+                            </li>
+                            <li>
+                                <a href="~/Data/TerminosyCondiciones" class="text-white" style="text-decoration:none;">Términos y condiciones</a>
+                            </li>
+                            <li>
+                                <a href="~/Data/Soporte" class="text-white" style="text-decoration:none;">Soporte</a>
+                            </li>
+                            <li>
+                                <a href="~/Data/VentasCorporativas" class="text-white" style="text-decoration:none;">Ventas Coorporativas</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
+                        <h5 class="text-uppercase mt-md-2" style="font-size:1rem;">SÍGUENOS</h5>
+                        <section class="mb-4">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.facebook.com/dataintelligencecl/" role="button">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating " target="_blank" href="https://twitter.com/data_int" role="button">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.instagram.com/data.intelligence/" role="button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <!-- Linkedin -->
+                            <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.linkedin.com/in/data-intelligence-5916b41a5/" role="button">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <!-- Youtube -->
+                            <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.youtube.com/channel/UCXo5Vhu65cOl3OcwWF9wLUA" role="button">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <!-- Pinterest -->
+                            <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.pinterest.cl/dataintelligencechile/_created/" role="button">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </section>
+
+                        <!-- @*<ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>*@ -->
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="#">dataintelligence-group.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        ActivarMenuSuperior4("#public_Index")
+    </script>
+    <!--SCRIPT DE CARRUSEL DE SECCION DE ICONOS DE SUSCRIPCIONES-->
+    <script src="/CarruselIndex.js"></script>
+</body>
+</html>
