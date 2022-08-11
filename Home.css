@@ -446,6 +446,7 @@ blockquote:after { /* final */
 }
 
 .cardcoleccion {
+    border: none !important;
     border-color: transparent;
     background-color: transparent;
 }
